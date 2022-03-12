@@ -1,16 +1,16 @@
 import React from "react";
-
+import "./home.css";
 const Home = () => {
   return (
-    <section id="Home" className="home section ">
+    <section id="Home" className=" section home">
       <div className="container">
-        <div className="row">
+        <div className="row home-row">
           <div className="home-info padd-15">
             <h3 className="hello">
-              Hello, my name is <span className="name">Parviz Jahangiri</span>
+              Hello, my name is <small className="name">Parviz Jahangiri</small>
             </h3>
             <h3 className="my-profession">
-              I' m a <span className="typing">Developer</span>
+              I' m a <small className="typing">Developer</small>
             </h3>
             <p>
               Front End Developer focused on React & React Native with 5 years
@@ -19,12 +19,14 @@ const Home = () => {
               related libraries.
             </p>
             <a href="#contact" className="btn hire-me">
-              {" "}
-              Hire Me
+              Download CV
             </a>
           </div>
           <div className="home-img padd-15">
             <img src="./photos.jpg" alt="parviz" />
+          </div>
+          <div className="menu">
+            <i class="fa-solid fa-bars"></i>
           </div>
         </div>
       </div>

@@ -1,17 +1,17 @@
 import { Fragment } from "react";
-import { HobData } from "../statics/data";
-import { SkillData } from "../statics/data";
-import { HobItem } from "../components/HobItem";
-import { AboutItem } from "../components/AboutItem";
-import { Education } from "../components/Education";
+import { HobData } from "statics/data";
+import { SkillData } from "statics/data";
+import { HobItem } from "components/HobItem";
+import { AboutItem } from "components/AboutItem";
+import { Education } from "components/Education";
 import "./about.css";
-import { Section } from "../components/Section";
+import { Section } from "components/Section";
 
 const About = () => {
   return (
     <>
-      <Section id={"AboutMe"} title={"About Me"}  className="about"  >
-        <div className="row" >
+      <Section id={"AboutMe"} title={"About Me"} className="about">
+        <div className="row">
           <div className="about-content padd-15">
             <div className="row">
               <div className="about-text padd-15">
@@ -29,28 +29,30 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <AboutItem title={"Skill"} icon={"fa fa-calendar"}>
-              <div className="row skills">
-                {SkillData.map((item, index) => {
-                  return (
-                    <Fragment key={index}>
-                      <HobItem {...item} />
-                    </Fragment>
-                  );
-                })}
-              </div>
-            </AboutItem>
-            <AboutItem title={"Hobbies"} icon={"fa fa-calendar"}>
-              <div className="row skills">
-                {HobData.map((item, index) => {
-                  return (
-                    <Fragment key={index}>
-                      <HobItem {...item} />
-                    </Fragment>
-                  );
-                })}
-              </div>
-            </AboutItem>
+           
+              <AboutItem title={"Skill"} icon={"fa fa-calendar"}>
+                <div className="row skills">
+                  {SkillData.map((item, index) => {
+                    return (
+                      <Fragment key={index}>
+                        <HobItem {...item} />
+                      </Fragment>
+                    );
+                  })}
+                </div>
+              </AboutItem>
+              <AboutItem title={"Hobbies"} icon={"fa fa-calendar"}>
+                <div className="row skills">
+                  {HobData.map((item, index) => {
+                    return (
+                      <Fragment key={index}>
+                        <HobItem {...item} />
+                      </Fragment>
+                    );
+                  })}
+                </div>
+              </AboutItem>
+            
             {/* <div className="hr">
                 <hr />
                 <hr />

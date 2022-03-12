@@ -1,13 +1,14 @@
-import React from "react";
-import { ContactList } from "../components/ContactList";
-import { FormContact } from "../components/FormContact";
-import { Section } from "../components/Section";
+import React, { useState } from "react";
+import { ContactList } from "components/ContactList";
+import { Section } from "components/Section";
 import "./contact.css";
 
+import FormEmail from "./FormEmail";
 const Contact = () => {
+ 
   return (
-    <div >
-      <Section  id={"Contact"}  title={"Contact"} className="content">
+    <div>
+      <Section id={"Contact"} title={"Contact"} className="content">
         <h3 className="content-title  padd-15">Have You Any Questions ?</h3>
         <h4 className="content-sub-title  padd-15">I 'M AT YOUR SERVICES</h4>
         <div className="row">
@@ -37,9 +38,9 @@ const Contact = () => {
           />
           <ContactList
             icon={"fa-brands fa-twitter"}
-            title={"Telegram"}
+            title={"Twitter"}
             href={"https://telegram.me/joinchat/@discreet22"}
-            aid={"p-jahangiri"}
+            aid={"@discreet22"}
           />
           <ContactList
             icon={"fa-brands fa-telegram"}
@@ -52,38 +53,7 @@ const Contact = () => {
         <h4 className="content-sub-title  padd-15">
           I 'M VERY RESPOSIVE TO MESSAGES
         </h4>
-        <div className="row">
-          <div className="content-form padd-15">
-            <div className="row">
-              <FormContact text={"text"} col={"col-6"} title={"Name"} />
-              <FormContact text={"email"} col={"col-6"} title={"Email"} />
-            </div>
-            <div className="row">
-              <FormContact text={"text"} col={"col-12"} title={"Subject"} />
-            </div>
-            <div className="row">
-              <div className="form-item  padd-15" id="col-12">
-                <div className="form-group">
-                  <textarea
-                    name=""
-                    className="form-control"
-                    id=""
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="form-item col-12 padd-15">
-                <div className="form-group">
-                  <button className="btn" type="submit">
-                    Send Message
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+       <FormEmail />
       </Section>
     </div>
   );

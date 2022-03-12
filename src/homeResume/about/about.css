@@ -27,7 +27,11 @@
       max-width: 60%;
       margin-top: 40px;
     }
-   
+    .skills {
+      flex: 0 0 40%;
+      max-width: 40%;
+    margin-top: 40px;
+    }
     .info-item {
       flex: 0 0 50%;
       max-width: 50%;
@@ -53,12 +57,12 @@
       margin-right: 20px;
     }
     .skills {
+        display: flex;
         flex: 0 0 100%;
         max-width: 100%;
-         margin-top: 40px;
     }
     .skill-item {
-        display: flex;
+      display: flex;
       flex: 0 0 25%;
       max-width: 25%;
       padding-left: 4rem;
@@ -66,13 +70,9 @@
       align-items: center;
       flex-direction: column;
     }
-    .skill-item h5 {
-      font-size: 18px;
-      font-weight: 400;
-      color: var(--text-black-700);
-    }
+ 
     .about-head {
-        margin-top: 6rem;
+        top: 100px;
         border-top: 1px solid var(--skin-color);
     }
     .head {
@@ -90,24 +90,28 @@
     .head h4 {
         font-size: 24px;
         margin: -5px;
-        font-weight: 600;
+        font-weight: 700;
         color: var(--text-black-900);
     }
     .skill-item i {
         font-size: 20px;
         margin-bottom: 20px;
+        /* line-height: 40px; */
         color: var(--skin-color);
     }
-
+    .skill-item h5 {
+      font-size: 16px;
+      color: var(--text-black-700);
+    }
     .experience, .education {
     flex: 0 0 50%;
     max-width: 50%;
-    margin-top: 50px;
+    margin-top: 130px;
     }
     .title {
     font-size: 24px;
     margin-bottom: 30px;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--text-black-900);
     }
     .timeline-box {
@@ -154,9 +158,8 @@
     margin-bottom: 12px;
     color: var(--text-black-700);
     }
-    .timeline-data i {
+    .timeline-data .fa {
       margin-right: 15px;
-      color: var(--skin-color);
     }
     .timeline-title {
     font-weight:700 ;
@@ -174,18 +177,15 @@
     /* .hr {
       display: flex;
       flex: 0 0 100%;
-    }
-    .hr hr {
+    } */
+    /* .hr hr {
       flex: 0 0 33.33%;
       max-width: 33.33%;
-      margin: 0 10px;
+      margin: 0 10px; */
 
-      border: 1px solid var(--skin-color);
-      background: var(--skin-color);
+      /* border: 1px solid var(--skin-color); */
+      /* background: var(--skin-color);
     }
     .hr hr:last-child {
-      margin-right: 0;
-    }
-    .hr hr:first-child {
-      margin-left: 0;
+      ma
     } */

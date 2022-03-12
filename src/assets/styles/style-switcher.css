@@ -51,18 +51,18 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.colors span {
+.colors small {
     display: inline-block;
     height: 30px;
     width: 30px;
     border-radius: 50%;
 }
-.style-switcher .color-1 {
+.style-switcher #color-1 {
     background: #fa5b0f;
 }
-.style-switcher .color-2 {
+.style-switcher #color-2 {
     background: #1854b4;
 }
-.style-switcher .color-3 {
+.style-switcher #color-3 {
     background: #37b182;
 }

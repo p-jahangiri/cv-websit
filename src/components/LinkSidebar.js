@@ -8,12 +8,12 @@ export const LinkSidebar = ({ icon, to, title }) => {
         activeClass="active"
         spy={true}
         smooth={true}
-        offset={-70}
-        duration={500}
+        offset={-60}
+        duration={400}
       >
         <div className="sidebar-item">
           <i className={icon}></i>
-          <span>{title}</span>
+          <small>{title}</small>
         </div>
       </Link>
       
