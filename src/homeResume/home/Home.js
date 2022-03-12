@@ -18,7 +18,7 @@ const Home = () => {
               Proficient in JavaScript, TypeScript, React; plus few other
               related libraries.
             </p>
-            <a href="#contact" className="btn hire-me">
+            <a href="MyResume.pdf" className="btn hire-me" download="parviz MyResume.pdf">
               Download CV
             </a>
           </div>
