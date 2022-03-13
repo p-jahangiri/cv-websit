@@ -1,3 +1,4 @@
+
 .about-content {
     flex: 0 0 100%;
     max-width: 100%;
@@ -13,8 +14,11 @@
       font-weight: 700;
       color: var(--text-black-900);
     }
-    .about-text h3 span {
+    .about-text h3 small {
       color:var(--skin-color);
+      font-family: 'Lobster';
+      font-size: 25px;
+      font-weight: 200;
       
     }
     .about-text p {

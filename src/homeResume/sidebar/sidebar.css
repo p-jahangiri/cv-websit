@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100&display=swap');
 .aside {
     width: 270px;
     background: var(--bg-black-100);
@@ -25,8 +26,9 @@
     letter-spacing: 5px;
   }
   .logo small {
-    font-size: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: "Pacifico";
   }
   .logo small::before {
     content: "";
@@ -48,6 +50,32 @@
     top: 0;
     right: 0;
   }
+ 
+  .nav-item {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  .sidebar-item {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid var(--bg-black-50);
+    color: var(--text-black-700);
+    padding: 15px 15px;
+    cursor: pointer;
+  }
+ 
+  .active {
+    color: var(--skin-color);
+    
+  }
+  .sidebar-item i {
+    margin-right: 15px;
+  }
+
+ 
   /* .nav-toggler {
     height: 40px;
     width: 45px;
@@ -88,29 +116,3 @@
     top: 6px;
     left: 0;
   } */
-.nav-item {
-    margin-top: 50px;
-  }
-  .nav-item {
-    margin-bottom: 20px;
-    display: block;
-  }
-  
-  .sidebar-item {
-    font-size: 18px;
-    font-weight: 600;
-    display: block;
-    border-bottom: 1px solid var(--bg-black-50);
-    color: var(--text-black-70);
-    padding: 15px 15px;
-    cursor: pointer;
-  }
-  .active {
-    
-    color: var(--skin-color) !important;
-  }
-  .sidebar-item i {
-    margin-right: 15px;
-  }
-
- 

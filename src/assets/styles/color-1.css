@@ -1,6 +1,15 @@
 /* :root {
-    --skin-color: #ec1839;
+    --skin-color: #37b182;
 } */
-:root {
-    --skin-color: #fa5b0f;
+
+[data-theme='orange']{
+   --skin-color: #fa5b0f;
+}
+
+[data-theme='blue']{
+   --skin-color: #542aec;
+}
+
+[data-theme='green']{
+    --skin-color: #37b182;
 }

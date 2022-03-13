@@ -12,16 +12,22 @@ const Sidebar = () => {
           <small></small>
         </div>
         <div className="nav-item">
-          <LinkSidebar to={"Home"} title={"Home"} icon={"fa fa-home"} />
-
-          <LinkSidebar to={"AboutMe"} title={"AboutMe"} icon={"fa fa-user"} />
-
+          <LinkSidebar 
+          to={"Home"} 
+          
+          title={"Home"} 
+          icon={"fa fa-home"} 
+          />
+          <LinkSidebar 
+          to={"AboutMe"} 
+          title={"AboutMe"} 
+          icon={"fa fa-user"} 
+          />
           <LinkSidebar
             to={"Portfolio"}
             title={"Portfolio"}
             icon={"fa fa-briefcase"}
           />
-
           <LinkSidebar
             to={"Contact"}
             title={"Contact"}

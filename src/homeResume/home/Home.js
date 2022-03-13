@@ -13,10 +13,8 @@ const Home = () => {
               I' m a <small className="typing">Developer</small>
             </h3>
             <p>
-              Front End Developer focused on React & React Native with 5 years
-              of experience in building and maintaining web applications.
-              Proficient in JavaScript, TypeScript, React; plus few other
-              related libraries.
+            Front End Developer focused on React . Proficient in JavaScript,  React; plus few other related libraries.Hardworking and interested in learning
+
             </p>
             <a href="MyResume.pdf" className="btn hire-me" download="parviz MyResume.pdf">
               Download CV

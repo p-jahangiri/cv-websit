@@ -16,16 +16,10 @@ const About = () => {
             <div className="row">
               <div className="about-text padd-15">
                 <h3>
-                  I' m Parviz Jahangiri and <span>developer</span>
+                  I' m Parviz Jahangiri and <small>developer</small>
                 </h3>
                 <p>
-                  ontrary to popular belief, Lorem Ipsum is not simply random
-                  text. It has roots in a piece of classical Latin literature
-                  from 45 BC, making it over 2000 years old. Richard McClintock,
-                  a Latin professor at Hampden-Sydney College in Virginia,
-                  looked up one of the more obscure Latin words, consectetur,
-                  from a Lorem Ipsum passage, and going through the cites of the
-                  word in classical literature, discovered
+                I mentioned information about myself below, if you have any questions, I am at your service
                 </p>
               </div>
             </div>

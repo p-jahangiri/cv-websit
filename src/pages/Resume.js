@@ -6,30 +6,26 @@ import Sidebar from "homeResume/sidebar/Sidebar";
 import { Portfolio } from "homeResume/portfolio/Portfolio";
 
 import "assets/styles/App.css";
-// import { Color } from "statics/data";
 
 import "assets/styles/style-switcher.css";
 import 'assets/styles/color-1.css'
+
+
+const htmlEl = document.getElementsByTagName('html')[0];
 const Resume = () => {
-  // const [color, setColor] = useState(Color);
+
   const [opens, setOpens] = useState(false);
-  const [tame, setTame] = useState(false);
-  // console.log(Color);
-  // const handelColor = (id) => {
-    
-  //   setColor([Color.filter((q) => q.id === id)]);
-  // };
-   // const altrnate = document.querySelectorAll(".altrnate")
-  // const setActive = (id) => {
-  //   altrnate.forEach((style) => {
-  //     if(id=== style.getAttribute("title")) {
-  //       console.log("title")
-  //         remove("aria-disabled")
-  //     }else {
-  //       remove("aria-disabled",true)
-  //     }
-  //   })
-  // }
+  
+  useEffect(() => {
+    htmlEl.dataset.theme = localStorage.getItem ('theme');
+    htmlEl.dataset.theme = ('theme', 'orange');
+  }, []);
+
+  const toggleTheme = (theme) => {
+    htmlEl.dataset.theme = theme;
+   
+  }
+
   const [themeState, setThemeState] = useState(false);
   useEffect(() => {
       const getTheme = localStorage.getItem('Theme');
@@ -46,6 +42,7 @@ const Resume = () => {
       }
   }, [themeState]);
 
+  
   window.addEventListener("scroll" ,() => {
     if(opens){
       setOpens(!opens)
@@ -74,19 +71,19 @@ const Resume = () => {
         <h4>Theme Colors</h4>
         <div className="colors">
           <small
-            id="color-1"
-            
-            // onClick={(id) => setActive(id)}
+            className="color-1"
+            onClick={() => toggleTheme('orange')}
           ></small>
           <small
-            id="color-2"
-           
-            // onClick={(id) => setActive(id)}
+            className="color-2"
+          //  id="green"
+            
+            onClick={() => toggleTheme('blue')}
           ></small>
           <small
-            id="color-3"
-            
-            // onClick={(id) => setActive(id)}
+            className="color-3"
+            // id="orange"
+            onClick={() => toggleTheme('green')}
           ></small>
         </div>
       </div>
