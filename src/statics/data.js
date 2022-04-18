@@ -11,6 +11,9 @@ export const SkillData = [
     title: "React",
   },
   {
+    title: "Next",
+  },
+  {
     title: "Html",
   },
   {
@@ -20,14 +23,12 @@ export const SkillData = [
     title: "Sass",
   },
   {
-    title: "Bootstrap",
+    title: "Styled Component",
   },
   {
     title: "Github",
   },
-  {
-    title: "Tailwind",
-  },
+ 
 ];
 export const HobData = [
   {
