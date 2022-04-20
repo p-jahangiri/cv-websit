@@ -15,7 +15,7 @@ const Contact = () => {
           <ContactList
             icon={"fa fa-comments"}
             title={"Call Us On "}
-            href={"tel:+989353532564"}
+            href={"tel:+989104744364"}
             aid={"+935 353 2564"}
           />
           <ContactList
